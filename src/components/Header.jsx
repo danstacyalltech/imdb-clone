@@ -2,7 +2,7 @@ import MenuItem from "./MenuItem";
 import Link from "next/link";
 import DarkModeSwitch from "./DarkModeSwitch";
 import { AiFillHome } from "react-icons/ai";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { BsFillPersonFill, BsInfoCircleFill } from "react-icons/bs";
 
 export default function Header() {
 	return (
@@ -13,6 +13,7 @@ export default function Header() {
 			</div>
 
 			<div className="flex items-center space-x-5">
+				<MenuItem title="SIGN IN" address="/sign-in" Icon={BsFillPersonFill} />
 				<DarkModeSwitch />
 				<Link href="/">
 					<h2 className="text-2xl">
